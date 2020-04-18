@@ -1,1 +1,1 @@
-worker: python back4app.py
+worker: python daily_one_word.py

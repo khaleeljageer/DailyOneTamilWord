@@ -15,10 +15,6 @@ def update_status(objectId):
     return response.status_code
 
 class Back4App():
-    def __init__(self):
-        self.beginnings = []
-        self.freq = {}
-
     def get_sentance(self):
         header = {
             'content-type': 'application/json',
@@ -34,3 +30,6 @@ class Back4App():
                     (results['word'], results['meaning']))
         update_status(results['objectId'])
         return sentence
+
+if __name__ == "__main__":
+    print("Try running daily_one_word.py first")
