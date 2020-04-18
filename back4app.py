@@ -1,6 +1,5 @@
 import requests
 import json
-<<<<<<< HEAD
 from local_settings import *
 
 def get_headers():
