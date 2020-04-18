@@ -6,8 +6,8 @@ def update_status(objectId):
     url = "https://parseapi.back4app.com/classes/WordCorpus/"+objectId
     payload = {'status': True}
     header = {
-        'X-Parse-Application-Id': 'uegNg5eWDj8UY19XkhzeQMUWcvkNqza17TaLRq22',
-        'X-Parse-REST-API-Key': 'qyIGngnRAqRvf8oXf9r2MhhaN1iDzcr68V5M91oo',
+        'X-Parse-Application-Id': 'application-Id',
+        'X-Parse-REST-API-Key': 'rest-Api-Key',
         'Content-Type': 'application/json'
     }
 
@@ -23,8 +23,8 @@ class Back4App():
     def get_sentance(self):
         header = {
             'content-type': 'application/json',
-            'X-Parse-Application-Id': 'uegNg5eWDj8UY19XkhzeQMUWcvkNqza17TaLRq22',
-            'X-Parse-REST-API-Key': 'qyIGngnRAqRvf8oXf9r2MhhaN1iDzcr68V5M91oo'
+            'X-Parse-Application-Id': 'application-Id',
+            'X-Parse-REST-API-Key': 'rest-Api-Key',
         }
         url = "https://parseapi.back4app.com/classes/WordCorpus?where=%7B%22status%22%3Afalse%7D"
         data = requests.get(url, headers=header)
