@@ -38,4 +38,4 @@ class Back4App():
 
 
 if __name__ == "__main__":
-    print("Try running back4app.py first")
+    print("Try running daily_one_word.py first")
