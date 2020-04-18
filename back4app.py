@@ -1,7 +1,7 @@
 import requests
 import json
+<<<<<<< HEAD
 from local_settings import *
-
 
 def get_headers():
     return {
@@ -15,11 +15,9 @@ def update_status(objectId):
     url = "https://parseapi.back4app.com/classes/WordCorpus/"+objectId
     payload = {'status': True}
     header = get_headers()
-
     response = requests.put(url, data=json.dumps(payload), headers=header)
     print(response.text)
     return response.status_code
-
 
 class Back4App():
     def get_sentance(self):
