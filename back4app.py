@@ -1,7 +1,6 @@
 import requests
 import json
 
-
 def update_status(objectId):
     url = "https://parseapi.back4app.com/classes/WordCorpus/"+objectId
     payload = {'status': True}
@@ -35,7 +34,3 @@ class Back4App():
                     (results['word'], results['meaning']))
         update_status(results['objectId'])
         return sentence
-
-
-if __name__ == "__main__":
-    print("Try running back4app.py first")
