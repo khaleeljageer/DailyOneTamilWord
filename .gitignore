@@ -135,4 +135,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-local_settings.py
+/local_settings.py
