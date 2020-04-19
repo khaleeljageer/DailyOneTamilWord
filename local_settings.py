@@ -7,4 +7,4 @@ MY_CONSUMER_SECRET = 'kIi8hXHOf1FllAO3UPSoiUmidDseq3TbWBJagnBcFR91rgGuOl'
 MY_ACCESS_TOKEN_KEY = '162929468-hGz3dfvJixYf11BsYGr80akRExWwcLKcpkTXjaoM'
 MY_ACCESS_TOKEN_SECRET = 'FQa36b8jljojCHVqQom10klwezm3NCGL4fYBU0eXDhlgT'
 DEBUG = False  # Set this to False to start Tweeting live
-ODDS = 1
+ODDS = 8
