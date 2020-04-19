@@ -2,6 +2,7 @@ import requests
 import json
 from local_settings import *
 
+
 def get_headers():
     return {
         'X-Parse-Application-Id': X_PARSE_APPLICATION_ID,
