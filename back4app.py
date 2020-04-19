@@ -31,7 +31,7 @@ class Back4App():
         sentence = ('சொல் : %s,\nபொருள் : %s' %
                     (results['word'], results['meaning']))
         update_status(results['objectId'])
-        tags = '\n#தினம் #ஒரு #தமிழ் #சொல்'
+        tags = '\n#தினமொரு #தமிழ்_சொல்'
         return sentence+tags
 
 
