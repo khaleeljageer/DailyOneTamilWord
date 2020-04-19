@@ -1,7 +1,7 @@
 import twitter
 import back4app
 
-from local_settings import *
+from secret_keys import *
 
 
 def connect():

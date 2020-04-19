@@ -1,6 +1,6 @@
 import requests
 import json
-from local_settings import *
+from secret_keys import *
 
 def get_headers():
     return {
