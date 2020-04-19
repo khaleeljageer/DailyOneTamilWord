@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def update_status(objectId):
     url = "https://parseapi.back4app.com/classes/WordCorpus/"+objectId
     payload = {'status': True}
@@ -13,6 +14,7 @@ def update_status(objectId):
     response = requests.put(url, data=json.dumps(payload), headers=header)
     print(response.text)
     return response.status_code
+
 
 class Back4App():
     def get_sentance(self):
@@ -29,7 +31,9 @@ class Back4App():
         sentence = ('சொல் : %s,\nபொருள் : %s' %
                     (results['word'], results['meaning']))
         update_status(results['objectId'])
-        return sentence
+        tags = '#தினம் #ஒரு #தமிழ் #சொல்'
+        return sentence+tags
+
 
 if __name__ == "__main__":
     print("Try running daily_one_word.py first")
