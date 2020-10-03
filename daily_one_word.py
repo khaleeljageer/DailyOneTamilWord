@@ -3,6 +3,9 @@ import back4app
 
 from secret_keys import *
 
+"""
+This file will make a connection with twitter api and tweet one word
+"""
 
 def connect():
     return twitter.Api(consumer_key=MY_CONSUMER_KEY,
